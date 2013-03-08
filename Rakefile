@@ -7,7 +7,14 @@ task :site_name do
     '_includes/header.html',
     '%site-name',
     input,
-    'awesome name!'
+    "awesome name!"
+  )
+
+  update_content(
+    '_includes/site-credits.html',
+    '%site-name',
+    input,
+    ""
   )
 
 end
@@ -20,7 +27,7 @@ task :site_strap do
     '_includes/header.html',
     '%site-strap',
     input,
-    '... Nicely put'
+    "... Nicely put"
   )
 
 end
@@ -33,7 +40,7 @@ task :about do
     '_includes/footer.html',
     '%about',
     input,
-    'smooth operator..'
+    "smooth operator.."
   )
 
 end
@@ -46,7 +53,7 @@ task :twitter do
     '_includes/site-credits.html',
     '%twitter-name',
     input,
-    'AWESOME!! That\'s it, all sorted. Go write some great articles!'
+    "AWESOME!! That's it, all sorted. Go write some great articles!"
   )
 
 end
