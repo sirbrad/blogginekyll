@@ -1,0 +1,39 @@
+/* 768px
+========================================================================== */
+
+.island {
+	padding: 4em;
+}
+
+.post--listing .post__title {
+	font-size: 2em;
+}
+
+.comment__item .img {
+	float: left;
+	margin: 0 1em 0 0;
+	
+	&:before {
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right: 10px solid #fff;
+		right: -1em;
+		bottom: 50%;
+		margin: 0 0 -10px;
+	}
+}
+
+.comment__item .bod {
+	padding: 2em;
+	overflow: hidden;
+}
+
+.comment__input {
+	margin-bottom: 1.6em;
+	padding: 2em;
+}
+
+.btn {
+	font-size: font-sizing(20px);
+	padding: 1.5em 0;
+}

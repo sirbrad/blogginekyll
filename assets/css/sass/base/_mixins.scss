@@ -1,0 +1,60 @@
+// Mixins
+
+@mixin radius ($radius) {
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	border-radius:$radius;
+}
+
+@mixin shadow ($shadow) {
+	-webkit-box-shadow:$shadow;
+	-moz-box-shadow:$shadow;
+	box-shadow:$shadow;
+}
+
+@mixin transition ($transition) {
+	-webkit-transition:$transition;
+	-moz-transition:$transition;
+	-ms-transition:$transition;
+	-o-transition:$transition;
+	transition:$transition;
+}
+
+@mixin transform ($transform) {
+	-webkit-transform:$transform;
+	-moz-transform:$transform;
+	-ms-transform:$transform;
+	-o-transform:$transform;
+	transform:$transform;
+}
+
+@mixin box-sizing ($box-sizing) {
+	-webkit-box-sizing:$box-sizing;
+	-moz-box-sizing:$box-sizing;
+	box-sizing:$box-sizing;
+}
+
+@mixin hyphens ($hyphens) {
+	-webkit-hyphens:$hyphens;
+	-moz-hyphens:$hyphens;
+	hyphens:$hyphens;
+}
+
+@mixin basic-gradient($start, $stop) {
+  background: $start;
+  background: -moz-linear-gradient(top,  $start 0%, $stop 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start), color-stop(100%,$stop));
+  background: -webkit-linear-gradient(top,  $start 0%,$stop 100%);
+  background: -o-linear-gradient(top,  $start 0%,$stop 100%);
+  background: -ms-linear-gradient(top,  $start 0%,$stop 100%);
+  background: linear-gradient(to bottom,  $start 0%,$stop 100%);
+}
+
+@mixin respond-to($content) {
+	@if $content == med {
+		@media only screen and (min-width: 44em) { @content; }
+	}
+	@if $content == site-width {
+		@media only screen and (min-width: font-sizing($site-max-width + 32px)) { @content; }
+	}
+}

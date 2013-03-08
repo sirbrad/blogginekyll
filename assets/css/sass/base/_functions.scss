@@ -1,0 +1,17 @@
+// Functions
+
+@function calc-em($target) {
+  @return ($target / $base-font-size) *1em; // Had to multiply by one to stop a space between the sum and type.
+}
+
+@function calc-percent($target, $container) {
+	@return ($target / $container) * 100%;
+}
+
+@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}
+
+@function shade($color, $percent){
+  @return mix(black, $color, $percent);
+}

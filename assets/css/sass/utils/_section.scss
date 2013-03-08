@@ -1,0 +1,32 @@
+/* Section
+   ========================================================================== */
+
+.site-section {
+  padding: 1.25em 1em;
+
+  @include respond-to(med) {
+    padding: 3em 1em;
+  }
+}
+
+.site-section--brand {
+  background-color: $brand;
+  color: #fff;
+}
+
+.site-section--touching {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.site-title {
+  font-size: font-sizing(22px);
+  font-weight: 500;
+  margin-bottom: 1.4em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+
+  @include respond-to(med) {
+    font-size: font-sizing(40px);
+  }
+}

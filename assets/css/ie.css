@@ -1,0 +1,295 @@
+article, aside,
+dialog, figure,
+footer, header,
+hgroup, menu,
+nav, section {
+  display: block;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  border: 1em solid #7eca72;
+}
+@media only screen and (min-width: 44em) {
+  html {
+    border-width: 2em;
+  }
+}
+
+body {
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #3e3e3e;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+::selection,
+::-moz-selection {
+  background-color: #de6439;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Links
+ ========================================================================== */
+a {
+  color: #de6439;
+  text-decoration: none;
+}
+
+/* Addresses outline displayed oddly in Chrome */
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improves readability when focused and also mouse hovered in all browsers */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+/*
+* 1. Allows images to undergo proportional down-scaling within a container
+* 2. Removes border when inside 'a' element in IE8/9, FF3
+* 3. Removes excess space below inline images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+}
+
+/* Lists
+ ========================================================================== */
+ul,
+ol {
+  padding-left: 30px;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 30px;
+}
+
+/* Tables
+ ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Typography
+ ========================================================================== */
+.hx, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .h1-l, .h1-xl {
+  margin: 0 0 1em;
+  line-height: 1.1;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h6, .h6 {
+  font-size: 0.875em;
+  color: #777;
+}
+
+h5, .h5 {
+  font-size: 0.875em;
+}
+
+h4, .h4 {
+  font-size: 1em;
+}
+
+h3, .h3 {
+  font-size: 1.25em;
+}
+
+h2, .h2 {
+  margin: 0 0 0.75em;
+  font-size: 1.5em;
+}
+
+h1, .h1 {
+  margin: 0 0 0.75em;
+  font-size: 2em;
+}
+
+.h1-l, .h1-xl {
+  margin: 0 0 0.5em;
+  font-size: 3.375em;
+  font-weight: normal;
+}
+
+.h1-xl {
+  margin: 0 0 0.5em;
+  font-size: 4.5em;
+  font-weight: normal;
+}
+
+small,
+.txt-s {
+  font-size: 75%;
+}
+
+.txt-xl {
+  font-size: 1.5em;
+}
+
+/*
+* Block-level margins
+*/
+p, blockquote, ul, ol, dl, menu, pre {
+  margin: 0 0 1.4em;
+}
+
+/* Clearfix
+   ========================================================================== */
+/* ClearFix - Ref: nicolasgallagher.com/micro-clearfix-hack/ */
+.cf, .contain {
+  zoom: 1;
+}
+
+.cf:before, .contain:before,
+.cf:after,
+.contain:after {
+  content: "";
+  display: table;
+}
+
+.cf:after, .contain:after {
+  clear: both;
+}
+
+/* Contain
+   ========================================================================== */
+.contain {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 1em;
+}
+@media only screen and (min-width: 44em) {
+  .contain {
+    padding: 2.5em;
+  }
+}
+
+/* Horizontal block
+   ========================================================================== */
+/*Hoz Block (Horizontal) - Ref: http://csswizardry.com/2011/09/the-nav-abstraction/ */
+.hoz {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hoz,
+.hoz dd {
+  margin-left: 0;
+}
+
+.hoz li,
+.hoz dt,
+.hoz dd {
+  display: inline;
+}
+
+.hoz a {
+  display: inline-block;
+}
+
+/* Hidden
+   ========================================================================== */
+/* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+.hidden {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.offscreen {
+  position: absolute;
+  left: -999em;
+}
+
+/* Island
+   ========================================================================== */
+.island {
+  border: 1px solid #eee;
+  padding: 1em;
+  word-wrap: break-word;
+}
+@media only screen and (min-width: 44em) {
+  .island {
+    padding: 1.5em;
+  }
+}
+
+/* Media object
+   ========================================================================== */
+/* Media Block - Ref: www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/ */
+.media {
+  display: block;
+}
+
+.media_img {
+  float: left;
+  margin-right: 1em;
+}
+
+.media_body {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+/* Pusher
+   ========================================================================== */
+.push {
+  margin: 1em;
+}
+
+.push--top {
+  margin-top: 1em;
+}
+
+.push--right {
+  margin-right: 1em;
+}
+
+.push--bottom {
+  margin-bottom: 1em;
+}
+
+.push--left {
+  margin-left: 1em;
+}
+
+.push--zero {
+  margin: 0;
+}

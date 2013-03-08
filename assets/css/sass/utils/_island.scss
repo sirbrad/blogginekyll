@@ -1,0 +1,12 @@
+/* Island
+   ========================================================================== */
+
+.island {
+  border: 1px solid #eee;
+  padding: 1em;
+  word-wrap: break-word;
+
+  @include respond-to(med) {
+    padding: 1.5em;
+  }
+}

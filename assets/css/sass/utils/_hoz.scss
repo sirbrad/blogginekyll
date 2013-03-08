@@ -1,0 +1,23 @@
+/* Horizontal block
+   ========================================================================== */
+
+/*Hoz Block (Horizontal) - Ref: http://csswizardry.com/2011/09/the-nav-abstraction/ */
+.hoz {
+	list-style:none;
+	padding-left:0;
+}
+
+.hoz,
+.hoz dd {
+	margin-left:0;
+}
+
+.hoz li,
+.hoz dt,
+.hoz dd {
+	display:inline;
+}
+
+.hoz a {
+	display:inline-block;
+}

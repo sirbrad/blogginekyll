@@ -1,0 +1,13 @@
+/* Contain
+   ========================================================================== */
+
+.contain {
+  @extend .cf;
+  max-width: $site-max-width;
+  margin: 0 auto;
+  padding: 1em;
+
+  @include respond-to(med) {
+    padding: 2.5em;
+  }
+}
