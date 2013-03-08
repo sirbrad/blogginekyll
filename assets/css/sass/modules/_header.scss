@@ -1,0 +1,18 @@
+/* Header
+   ========================================================================== */
+
+.site-head {
+	border-bottom: .25em solid $brand-secondary;
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.site-logo {
+	margin: 0 0 .25em;
+}
+
+.site-strap {
+	font-size: calc-em(18px);
+	font-weight: 300;
+	margin-bottom: 0;
+}

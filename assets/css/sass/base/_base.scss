@@ -15,7 +15,8 @@ nav, section {
 }
 
 html {
-  border: 1em solid $brand-secondary;
+  border: .5em solid $brand-secondary;
+  min-height:100%;
 
   @include respond-to(med) {
     border-width: 2em;
@@ -145,7 +146,6 @@ h3, .h3 {
 
 h2, .h2 {
   @extend .hx;
-  margin: 0 0 0.75em;
   font-size: 1.5em;
 }
 
