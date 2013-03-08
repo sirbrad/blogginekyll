@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<article class="island post">
-	<header>		
-		<time class="post__date" datetime="{{ page.date | date: "%Y-%m-%d"  }}" pubdate="">{{ page.date | date_to_long_string }}</time>
-		<h1>{{ page.title }}</h1>
-	</header>
-	{{ content }}
+
+<article class="post">
+  <header class="post__head">
+    <time class="post__date" datetime="2012-08-17" pubdate="">{{ page.date | date_to_long_string }}</time>
+    <h1 class="post__title">{{ page.title }}</h1>
+  </header>
+  {{ content }}
 </article>
-{% include comments.html %}

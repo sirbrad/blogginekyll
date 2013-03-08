@@ -5,10 +5,15 @@ name: Bradley Few
 ---
 
 {% for post in site.posts %}
-	<article class="island post post--listing post--id-{{forloop.index0}}">
-		<header>
-			<h1 class="h2 post__title"><a href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">{{ post.title }} </a></h1>
-			<time datetime="{{ post.date | date: "%Y-%m-%d"  }}" pubdate="">{{ post.date | date_to_long_string }}</time>
-		</header>
-	</article>
+
+  <article class="post">
+    <header>
+      <time class="post__date" datetime="2012-08-17" pubdate="">{{ post.date | date_to_long_string }}</time>
+      <h1 class="post__title">
+        <a href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">{{ post.title }}</a>
+      </h1>
+    </header>
+    {{ post.content }}
+  </article>
+
 {% endfor %}
