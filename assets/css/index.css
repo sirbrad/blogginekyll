@@ -35,7 +35,12 @@ body {
   -ms-text-size-adjust: 100%;
 }
 
-::selection,
+::selection {
+  background-color: #de6439;
+  color: #fff;
+  text-shadow: none;
+}
+
 ::-moz-selection {
   background-color: #de6439;
   color: #fff;
@@ -649,16 +654,9 @@ p, blockquote, ul, ol, dl, menu, pre {
 
 .post__title a {
   color: #3e3e3e;
-  border-bottom: 1px solid transparent;
-  padding-bottom: .1em;
 }
-.post__title a:hover, .post__title a:focus {
-  border-bottom: 1px solid #de6439;
-  text-decoration: none;
-}
-.post__title a:active {
+.post__title a:hover, .post__title a:focus, .post__title a:active {
   color: #de6439;
-  text-decoration: none;
 }
 
 .post__date {

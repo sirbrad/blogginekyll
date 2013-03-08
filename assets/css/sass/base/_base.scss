@@ -34,7 +34,12 @@ body {
   -ms-text-size-adjust: 100%;
 }
 
-::selection,
+::selection {
+  background-color:$brand;
+  color: #fff;
+  text-shadow: none;
+}
+
 ::-moz-selection {
   background-color:$brand;
   color: #fff;

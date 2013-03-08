@@ -13,18 +13,11 @@
 
 .post__title a {
   color: $base-text-color;
-  border-bottom: 1px solid transparent;
-  padding-bottom: .1em;
 
   &:hover,
-  &:focus {
-    border-bottom: 1px solid $brand;
-    text-decoration: none;
-  }
-
+  &:focus,
   &:active {
     color: $brand;
-    text-decoration: none;
   }
 }
 

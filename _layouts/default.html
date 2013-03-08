@@ -7,11 +7,7 @@
   <title>{{ page.title }}</title>
   <meta name="author" content="sirBrad" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Favicon -->
-  <link rel="stylesheet" href="assets/css/index.css" media="(min-width:0)" />
-  <!--[if (lt IE 9) & (!IEMobile)]>
-  <link rel="stylesheet" href="assets/styles/ie.css">
-  <![endif]-->
+  <link rel="stylesheet" href="/assets/css/index.css" />
 </head>
 <body>
   <div class="contain">
@@ -23,7 +19,10 @@
     </div>
 
     {% include footer.html %}
+    {% include site-credits.html %}
 
   </div>
+
+  {{ include google_analytics.html }}
 </body>
 </html>
