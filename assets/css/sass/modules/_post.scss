@@ -1,0 +1,36 @@
+/* Post
+   ========================================================================== */
+
+.post {
+  padding-bottom: 1.5em;
+  padding-top: 2.75em;
+
+  & + .post {
+    border-top: .25em solid $brand-secondary;
+  }
+
+}
+
+.post__title a {
+  color: $base-text-color;
+  border-bottom: 1px solid transparent;
+  padding-bottom: .1em;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $brand;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $brand;
+    text-decoration: none;
+  }
+}
+
+.post__date {
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  margin-bottom: 1.5em;
+  padding: 0 .5em .25em 0;
+}

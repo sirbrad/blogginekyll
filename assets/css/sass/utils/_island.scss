@@ -2,11 +2,15 @@
    ========================================================================== */
 
 .island {
-  border: 1px solid #eee;
   padding: 1em;
   word-wrap: break-word;
+  border-radius: .2em;
 
   @include respond-to(med) {
     padding: 1.5em;
   }
+}
+
+.island p:last-of-type {
+  margin-bottom: 0;
 }

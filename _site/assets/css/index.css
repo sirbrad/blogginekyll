@@ -28,7 +28,7 @@ body {
   background-color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #3e3e3e;
   margin: 0;
   -webkit-text-size-adjust: 100%;
@@ -139,7 +139,7 @@ h2, .h2 {
 
 h1, .h1 {
   margin: 0 0 0.75em;
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 .h1-l, .h1-xl {
@@ -167,7 +167,7 @@ small,
 * Block-level margins
 */
 p, blockquote, ul, ol, dl, menu, pre {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.6em;
 }
 
 .highlight {
@@ -555,14 +555,18 @@ p, blockquote, ul, ol, dl, menu, pre {
 /* Island
    ========================================================================== */
 .island {
-  border: 1px solid #eee;
   padding: 1em;
   word-wrap: break-word;
+  border-radius: .2em;
 }
 @media only screen and (min-width: 44em) {
   .island {
     padding: 1.5em;
   }
+}
+
+.island p:last-of-type {
+  margin-bottom: 0;
 }
 
 /* Media object
@@ -612,7 +616,6 @@ p, blockquote, ul, ol, dl, menu, pre {
    ========================================================================== */
 .site-head {
   border-bottom: 0.25em solid #7eca72;
-  margin-bottom: 1.5em;
   padding-bottom: 1.5em;
 }
 
@@ -629,7 +632,49 @@ p, blockquote, ul, ol, dl, menu, pre {
 /* Footer
    ========================================================================== */
 .site-foot {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: font-sizing(14px);
+  background-color: #7eca72;
+  color: #fff;
+  margin-bottom: 1.5em;
+}
+
+/* Post
+   ========================================================================== */
+.post {
+  padding-bottom: 1.5em;
+  padding-top: 2.75em;
+}
+.post + .post {
+  border-top: 0.25em solid #7eca72;
+}
+
+.post__title a {
+  color: #3e3e3e;
+  border-bottom: 1px solid transparent;
+  padding-bottom: .1em;
+}
+.post__title a:hover, .post__title a:focus {
+  border-bottom: 1px solid #de6439;
+  text-decoration: none;
+}
+.post__title a:active {
+  color: #de6439;
+  text-decoration: none;
+}
+
+.post__date {
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  margin-bottom: 1.5em;
+  padding: 0 .5em .25em 0;
+}
+
+/* Site Credits
+   ========================================================================== */
+.site-credits {
   text-align: center;
+}
+
+.credit__copyright {
+  font-size: 0.75em;
+  margin-bottom: 0;
 }

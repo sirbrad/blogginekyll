@@ -1,9 +1,8 @@
 /* Footer
    ========================================================================== */
 
-
 .site-foot {
-	color: rgba(0, 0, 0, .5);
-	font-size: font-sizing(14px);
-	text-align: center;
+  background-color: $brand-secondary;
+  color: #fff;
+  margin-bottom: 1.5em;
 }

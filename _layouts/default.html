@@ -3,34 +3,42 @@
 <!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-	<title>{{ page.title }}</title>
-    <meta name="author" content="sirBrad" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Favicon -->
-    <link rel="stylesheet" href="/assets/css/index.css" media="(min-width:0)" />
-    <!--[if (lt IE 9) & (!IEMobile)]>
-    	<link rel="stylesheet" href="/assets/styles/ie.css">
-    <![endif]-->
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="author" content="sirBrad" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="stylesheet" href="/assets/css/index.css" media="(min-width:0)" />
+  <!--[if (lt IE 9) & (!IEMobile)]>
+  <link rel="stylesheet" href="/assets/styles/ie.css">
+  <![endif]-->
 </head>
 <body>
   <div class="contain">
 
     {% include header.html %}
 
-    <div class="site-body">
-        <article class="island post">
-    <header>
-        <time class="post__date" datetime="2012-08-17" pubdate="">17 August 2012</time>
-        <h1>Github powered comments</h1>
-    </header>
-    <p>Github is awesome. I use it pretty much everyday for my work, personal projects, my blog and now I use it to power my blog comments. <a href="https://github.com/sirbrad/sirbrad.github.com" title="View the source of this blog">This blog</a> is hosted on github pages and built by their static blog generator <a href="https://github.com/mojombo/jekyll/" title="Check out the Jekyll repository">Jekyll</a>, so it made sense to keep the comments in the same place. It is built upon their issue api which made it super easy to list and create comments straight from the blog.</p>
+    <div class="site-body" role="main">
+      <article class="post">
+        <header>
+          <time class="post__date" datetime="2012-08-17" pubdate="">17 August 2012</time>
+          <h1><a href="#" title="Permanent link to: 'post'">Github powered comments</a></h1>
+        </header>
+      <p>Github is awesome. I use it pretty much everyday for my work, personal projects, my blog and now I use it to power my blog comments. <a href="https://github.com/sirbrad/sirbrad.github.com" title="View the source of this blog">This blog</a> is hosted on github pages and built by their static blog generator <a href="https://github.com/mojombo/jekyll/" title="Check out the Jekyll repository">Jekyll</a>, so it made sense to keep the comments in the same place. It is built upon their issue api which made it super easy to list and create comments straight from the blog.</p>
 
-<p>I'm sure someone a tad smarter than me could make this into more of a plugin, so it can be integrated easily on any github hosted blog. Also, because it uses oAuth it had to be set up as a github application so I think it is only useable on my domain at the moment. It be would great if someone could advise me on a way to update the callback url depending on which domain it was on or if that was even possible - because once the user is authenticated they would be able to add comments to any blog using Comcom ( what I ingeniously named it! ).</p>
+      <p>I'm sure someone a tad smarter than me could make this into more of a plugin, so it can be integrated easily on any github hosted blog. Also, because it uses oAuth it had to be set up as a github application so I think it is only useable on my domain at the moment. It be would great if someone could advise me on a way to update the callback url depending on which domain it was on or if that was even possible - because once the user is authenticated they would be able to add comments to any blog using Comcom ( what I ingeniously named it! ).</p>
 
-<p>Anyway, I'll aim to write a more technical post detailing more about how I built it in the near future. But for now, you can <a href="https://github.com/sirbrad/comcom" title="View the Comcom repository">view the code on github</a>. Let me know what you think by using it below :D</p>
+      <p>Anyway, I'll aim to write a more technical post detailing more about how I built it in the near future. But for now, you can <a href="https://github.com/sirbrad/comcom" title="View the Comcom repository">view the code on github</a>. Let me know what you think by using it below :D</p>
 
-</article>
+      </article>
+      <article class="post">
+        <header>
+          <time class="post__date" datetime="2012-08-17" pubdate="">17 August 2012</time>
+          <h1>Hello World</h1>
+        </header>
+      <p>Github is awesome. I use it pretty much everyday for my work, personal projects, my blog and now I use it to power my blog comments. <a href="https://github.com/sirbrad/sirbrad.github.com" title="View the source of this blog">This blog</a> is hosted on github pages and built by their static blog generator <a href="https://github.com/mojombo/jekyll/" title="Check out the Jekyll repository">Jekyll</a>, so it made sense to keep the comments in the same place. It is built upon their issue api which made it super easy to list and create comments straight from the blog.</p>
+
+      </article>
       {{ content }}
     </div>
 
