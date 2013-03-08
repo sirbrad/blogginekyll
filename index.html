@@ -9,7 +9,7 @@ title: Bradley Few
     <header>
       <time class="post__date" datetime="2012-08-17" pubdate="">{{ post.date | date_to_long_string }}</time>
       <h1 class="post__title">
-        <a href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">{{ post.title }}</a>
+        <a href="/blogginekyll{{ post.url }}" title="Permanent link to: '{{ post.title }}'">{{ post.title }}</a>
       </h1>
     </header>
     {{ post.content }}
