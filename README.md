@@ -3,8 +3,6 @@
 ## What is it?
 Blogginekyll is a super simple theme for a [Jekyll](https://github.com/mojombo/jekyll) blog. You can clone/fork it and start blogging right away!
 
-You can see a [demo](http://bradleyfew.com/blogginekyll) here.
-
 ## Why did you build it?
 We as developers are notoriously *bad* at designing. I thought I'd help out by building something that looks good (I hope).
 
@@ -13,7 +11,7 @@ Sold? Ok awesome heres how to get started!
 
 #### What you'll need
 
-You'll need to install [Jekyll](https://github.com/mojombo/jekyll) if you don't already have it. 
+You'll need to install [Jekyll](https://github.com/mojombo/jekyll) if you don't already have it.
 
 ```
 gem install jekyll
@@ -24,18 +22,7 @@ Once everything is installed, fork or clone [Blogginekyll](https://github.com/si
 
 ## Making it your own
 
-Firstly, it's probably best to go through the html and add the correct information for yourself. Here's a list of what needs changing;
-
-- Page Title `/index.html#l3`
-- Site Logo `/inclues/header.html#l3`
-- Site Strapline `/inclues/header.html#l4 `
-- About me section `/includes/footer.html#l3`
-- Twitter handle `/includes/site-credits.html#l2` & `/includes/site-credits.html#l3` 
-- Copyright information `/includes/site-credits.html#l4`
-
-I'm going to investigate how the above could be automated.
-
-Now start the Jekyll server `jekyll --server` and navigate too `localhost:4000` and your new blog is now running.
+You'll need to add your own information, ie what you wish to call your blog, strapline and about section. I set up an interactive rake task to help with this so run `rake build`.
 
 ## Adding your personal touch
 
