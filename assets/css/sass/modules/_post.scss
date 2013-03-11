@@ -27,3 +27,14 @@
   margin-bottom: 1.5em;
   padding: 0 .5em .25em 0;
 }
+
+.post .highlight {
+  background-color: whiteSmoke;
+  border-left: .4em solid #eee;
+  padding: 1em;
+  border-radius: .25em;
+}
+
+.post .highlight pre:last-of-type {
+  margin-bottom: 0;
+}
