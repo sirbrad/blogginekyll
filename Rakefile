@@ -17,6 +17,12 @@ task :site_name do
     ""
   )
 
+  update_content(
+    'index.html',
+    '%site-name',
+    input,
+    ""
+  )
 end
 
 task :site_strap do
