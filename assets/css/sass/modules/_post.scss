@@ -35,6 +35,10 @@
   border-radius: .25em;
 }
 
+.post pre {
+  overflow: auto;
+}
+
 .post .highlight pre:last-of-type {
   margin-bottom: 0;
 }

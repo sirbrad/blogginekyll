@@ -116,7 +116,7 @@ table {
  ========================================================================== */
 .hx, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .h1-l, .h1-xl {
   margin: 0 0 1em;
-  line-height: 1.1;
+  line-height: 1.4;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
 }
@@ -671,6 +671,10 @@ p, blockquote, ul, ol, dl, menu, pre {
   border-left: .4em solid #eee;
   padding: 1em;
   border-radius: .25em;
+}
+
+.post pre {
+  overflow: auto;
 }
 
 .post .highlight pre:last-of-type {
